@@ -54,7 +54,11 @@ before or after the 3 lines.
 
 ### Automatic (update without asking — announce only "Updated session." in one line)
 
-- Significant git commit during session (not "fix typo" or trivial)
+- **After every `git commit` or `git push`** that is not trivial — update
+  SESSION.md immediately, without being asked. Do not wait for the user to
+  request it. This is the most important trigger. If you just ran `git commit`
+  or `git push` and the commit message is not "fix typo", "formatting", or
+  similarly trivial, write SESSION.md right now.
 - Completed feature or significant bug fix
 - Architectural decision made (also update CLAUDE.md directly)
 - User signals winding down: "I'm out", "tomorrow", "let's continue tomorrow",
@@ -71,7 +75,7 @@ before or after the 3 lines.
 
 - Code edits (happens constantly)
 - Regular questions or explanations
-- Trivial commits ("fix typo", "formatting")
+- Trivial commits ("fix typo", "formatting", single-word messages)
 
 ---
 
